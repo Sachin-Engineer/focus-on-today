@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(72, 163, 0, 0.07);
+    font-family: 'Poppins', sans-serif;
+}
+
+#wrapper {
+    padding-block: 32px;
+}
+
+.title {
+    font-size: 64px;
+    color: #48A300;
+    text-align: center;
+}
+
+.title span {
+    color: #61481C;
+}
+
+.container {
+    background-color: #FBFBFB;
+    max-width: 660px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 32px 42px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.sub-title {
+    font-size: 32px;
+}
+
+.sub-title img {
+    vertical-align: middle;
+    margin-left: 16px;
+}
+
+.progress-label {
+    font-size: 14px;
+    color: #858585;
+    margin: 20px 0;
+}
+
+.progress-bar {
+    height: 30px;
+    background-color: rgba(72, 163, 0, 0.1);
+    border-radius: 15px;
+}
+
+.progress-value {
+    height: 100%;
+    width: 33%;
+    background-color: #48A300;
+    border-radius: 15px;
+    color: #EEFFE0;
+    font-size: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.error-label {
+    font-size: 14px;
+    color: #FF5151;
+    margin-block: 20px;
+}
+
+.goal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.goal {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    /* padding: 40px 22px; */
+}
+
+.custom-checkbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(97, 72, 28, 0.3);
+    border-radius: 50%;
+    flex-shrink: 0;
+    /* display: inline-block;
+    vertical-align: middle; */
+}
+
+.goal-input {
+    margin-left: 22px;
+    font-family: inherit;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.goal-input::placeholder {
+    color: #D9D9D9;
+}
+
+.quote {
+    font-weight: 500;
+    text-align: center;
+    margin-block: 54px;
+}
+
+.made-with {
+    font-size: 10px;
+    margin-top: 64px;
+    text-align: center;
+}

@@ -57,7 +57,7 @@ body {
 
 .progress-value {
     height: 100%;
-    width: 33%;
+    width: 0%;
     background-color: #48A300;
     border-radius: 15px;
     color: #EEFFE0;
@@ -65,6 +65,9 @@ body {
     font-weight: 500;
     display: flex;
     align-items: center;
+}
+
+.progress-value span {
     padding-left: 20px;
 }
 

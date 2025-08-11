@@ -12,24 +12,40 @@ checkBoxList.forEach((checkBox) => {
         if (noOfFilledGoalInput === 3) {
             // progressBar.classList.remove('show-error')
             checkBox.parentElement.classList.toggle('completed')
-            // if(checkBox.parentElement.classList.contains('completed')) {
-            //     noOfCompletedClass++
-            //     console.log(noOfCompletedClass)
-            //     if(noOfCompletedClass === 1) {
-            //         progressValue.style.width = '33%'
-            //         progressValueSpan.textContent = '1/3 completed'
-            //     } else if(noOfCompletedClass === 2) {
-            //         progressValue.style.width = '66%'
-            //         progressValueSpan.textContent = '2/3 completed'
-            //     } else if(noOfCompletedClass === 3) {
-            //         progressValue.style.width = '100%'
-            //         progressValueSpan.textContent = '3/3 completed'
-            //         noOfCompletedClass = 0;
-            //     } else {
-            //         progressValue.style.width = '0%'
-            //         progressValueSpan.textContent = ''
-            //     }
-            // }
+
+            if(checkBox.parentElement.classList.contains('completed')) {
+                noOfCompletedClass++
+                // console.log(noOfCompletedClass)
+                if(noOfCompletedClass === 1) {
+                    progressValue.style.width = '33%'
+                    progressValueSpan.textContent = '1/3 completed'
+                } else if(noOfCompletedClass === 2) {
+                    progressValue.style.width = '66%'
+                    progressValueSpan.textContent = '2/3 completed'
+                } else if(noOfCompletedClass === 3) {
+                    progressValue.style.width = '100%'
+                    progressValueSpan.textContent = '3/3 completed'
+                } else {
+                    progressValue.style.width = '0%'
+                    progressValueSpan.textContent = ''
+                }
+            } else {
+                noOfCompletedClass--
+                // console.log(noOfCompletedClass)
+                if(noOfCompletedClass === 1) {
+                    progressValue.style.width = '33%'
+                    progressValueSpan.textContent = '1/3 completed'
+                } else if(noOfCompletedClass === 2) {
+                    progressValue.style.width = '66%'
+                    progressValueSpan.textContent = '2/3 completed'
+                } else if(noOfCompletedClass === 3) {
+                    progressValue.style.width = '100%'
+                    progressValueSpan.textContent = '3/3 completed'
+                } else {
+                    progressValue.style.width = '0%'
+                    progressValueSpan.textContent = ''
+                }
+            }
         } else {
             progressBar.classList.add('show-error')
         }

@@ -105,7 +105,7 @@ goalInputList.forEach((goalInput) => {
             if (noOfFilledGoalInput < 3) {
                 noOfFilledGoalInput++
             }
-            console.log(noOfFilledGoalInput)
+            // console.log(noOfFilledGoalInput)
         }
     })
     goalInput.addEventListener('input', () => {
@@ -113,7 +113,7 @@ goalInputList.forEach((goalInput) => {
             progressBar.classList.remove('show-error')
         }
 
-        if (allGoals[goalInput.id].completed) {
+        if (allGoals[goalInput.id]?.completed) {
             goalInput.value = allGoals[goalInput.id].inputValue
             return
         }
@@ -123,6 +123,5 @@ goalInputList.forEach((goalInput) => {
             completed: false,
         }
         localStorage.setItem('allGoals', JSON.stringify(allGoals))
-        console.log(allGoals[goalInput.id])
     })
 })

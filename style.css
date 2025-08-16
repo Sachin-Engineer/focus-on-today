@@ -12,13 +12,14 @@ body {
 }
 
 #wrapper {
-    padding-block: 32px;
+    padding-block: 16px;
 }
 
 .title {
     font-size: 64px;
     color: #48A300;
     text-align: center;
+    padding-bottom: 16px;
 }
 
 .title span {
@@ -160,4 +161,30 @@ body {
 .completed .goal-input {
     color: #48A300;
     text-decoration: line-through;
+}
+
+@media (max-width: 570px) {
+    .title {
+        font-size: 50px;
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 375px) {
+    .title {
+        font-size: 32px;
+        padding-bottom: 16px;
+    }
+    #wrapper {
+        padding-block: 16px;
+    }
+    .sub-title {
+        font-size: 16px;
+    }
+    .sub-title img {
+        width: 32px;
+    }
+    .quote {
+        font-size: 14px;
+    }
 }
